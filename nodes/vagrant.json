@@ -1,0 +1,8 @@
+{
+  "name": "camunda-cookbook-template",
+  "description": "camunda-cookbook-template playground",
+
+  "run_list": [
+    "recipe[camunda-cookbook-template::default]"
+  ]
+}
