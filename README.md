@@ -1,67 +1,19 @@
-# This a the camunda-cookbook-template
-It is meant to be used for quickly creating own cookbook which include unit and integration test infrastructure.
+# camunda-cookbook-template
 
-# camunda-cookbook-template-cookbook
 
 ## Description
 
-This is the camunda continuous integration base cookbook. It is the foundation used to setup the ci infrastructure for camunda bpm.This is the camunda continuous integration setup aggregation cookbook. It is used to setup the ci infrastructure for camunda bpm.
-
-
-## Supported Platforms
-
-* Ubuntu 14.04
-
-
-## Attributes
-
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['camunda-cookbook-template']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+This repository can be used as a starting point when developing chef cookbooks for camunda.
 
 
 ## Usage
 
-### camunda-cookbook-template::default
+1. Clone this repository `git clone git@github.com/camunda-ci/camunda-cookbook-template.git`.
+2. To clear the repository history, delete the `.git` folder and immediately reinitialize the folder as a git repository using `git init`.
+3. Add the remote origin of your new cookbook repository like `git remote add origin git@github.com:camunda-ci/camunda-whatever-cookbook.git`.
+4. Use a text editor or `sed / grep` whatever to replace the string `camunda-cookbook-template` with your cookbook name eg. `camunda-jenkins` inside all files.
+   Sed example `grep -lr --exclude-dir=".git" -e "camunda-cookbook-template" . | xargs sed -i "s/camunda-cookbook-template/camunda-jenkins/g"`.
+5. Delete this `README` and rename `README.md.example` to `README.md`.
+6. Add all files using `git add .`. Commit all files `git commit -m "Initial commit"`. Push all files to origin like `git push -u origin master`.
 
-Include `camunda-cookbook-template` in your node's `run_list`:
-
-```json
-{
-  "run_list": [
-    "recipe[camunda-cookbook-template::default]"
-  ]
-}
-```
-
-### Testing and Development
-
-Please see information in [VAGRANT](VAGRANT.md) for how to use the Vagrant environment.  
-Full development and testing workflow with Test Kitchen and friends [TESTING](TESTING.md)
-
-
-## Contributing
-
-Please see contributing information in: [CONTRIBUTING](CONTRIBUTING.md)
-
-
-## Maintainers
-
-Author:: Christian Lipphardt (<christian.lipphardt@camunda.com>)
-
-
-## License
-
-Please see licensing information in: [LICENSE](LICENSE)
-
+Have a look at the new `README.md` to get a description of what this cookbook template provides and how it is used.

@@ -59,12 +59,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
-  config.vm.define :camunda_ci_base, primary: true do |camunda_ci_base|
-    camunda_ci_base.vm.hostname = "camunda-cookbook-template"
+  config.vm.define :myvm, primary: true do |myvm|
+    myvm.vm.hostname = "camunda-cookbook-template"
 
-    camunda_ci_base.vm.network :private_network, type: "dhcp"
+    myvm.vm.network :private_network, type: "dhcp"
 
-    camunda_ci_base.vm.provider :virtualbox do |vb|
+    myvm.vm.provider :virtualbox do |vb|
       vb.memory = 2048
       vb.cpus = 2
     end
