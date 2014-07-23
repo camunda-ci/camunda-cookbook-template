@@ -1,7 +1,4 @@
-# This a the camunda-cookbook-template
-It is meant to be used for quickly creating own cookbook which include unit and integration test infrastructure.
-
-# camunda-cookbook-template-cookbook
+# camunda-template-cookbook
 
 ## Description
 
@@ -23,7 +20,7 @@ This is the camunda continuous integration base cookbook. It is the foundation u
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['camunda-cookbook-template']['bacon']</tt></td>
+    <td><tt>['camunda-template']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -33,14 +30,14 @@ This is the camunda continuous integration base cookbook. It is the foundation u
 
 ## Usage
 
-### camunda-cookbook-template::default
+### camunda-template::default
 
-Include `camunda-cookbook-template` in your node's `run_list`:
+Include `camunda-template` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[camunda-cookbook-template::default]"
+    "recipe[camunda-template::default]"
   ]
 }
 ```

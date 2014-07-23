@@ -17,5 +17,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[camunda-cookbook-template::default]
+      - recipe[camunda-template::default]
     attributes:

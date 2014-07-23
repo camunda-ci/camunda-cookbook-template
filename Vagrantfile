@@ -36,7 +36,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     config.vm.provision :chef_client do |chef|
       chef.run_list = [
-          "recipe[camunda-cookbook-template::default]"
+          "recipe[camunda-template::default]"
       ]
     end
     # Use chef_solo to configure VM
@@ -60,7 +60,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.define :myvm, primary: true do |myvm|
-    myvm.vm.hostname = "camunda-cookbook-template"
+    myvm.vm.hostname = "camunda-template"
 
     myvm.vm.network :private_network, type: "dhcp"
 

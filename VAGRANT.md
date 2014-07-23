@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-For development of the camunda-cookbook-template environment, you need to install:
+For development of the camunda-template cookbook environment, you need to install:
 
 * [Chef Development Kit](http://www.getchef.com/downloads/chef-dk/) or
    * alternatively install
@@ -25,7 +25,7 @@ vagrant plugin install vagrant-berkshelf --plugin-version '>= 2.0.1'
 
 ## Managing the Vagrant VM
 
-Use ```vagrant up``` to create the virtual machine using the camunda-cookbook-template cookbook while provisioning.
+Use ```vagrant up``` to create the virtual machine using the camunda-template cookbook while provisioning.
 Use ```vagrant ssh``` to login to the virtual machine.
 The user / password combo is ```vagrant / vagrant ```. The user has sudo rights.
 If you want to start all over, execute

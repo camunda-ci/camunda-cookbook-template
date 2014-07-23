@@ -1,6 +1,6 @@
 # 0.1.0
 
-Initial release of camunda-cookbook-template
+Initial release of camunda-template-cookbook
 
 * Enhancements
   * an enhancement

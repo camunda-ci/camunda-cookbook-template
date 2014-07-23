@@ -1,4 +1,4 @@
-# Testing the camunda-cookbook-template cookbook
+# Testing the camunda-template cookbook
 
 This cookbook includes both unit tests via [ChefSpec](https://github.com/sethvargo/chefspec) and integration tests via [Test Kitchen](https://github.com/test-kitchen/test-kitchen). Contributions to this cookbook will only be accepted if all tests pass successfully:
 
@@ -8,13 +8,13 @@ This cookbook includes both unit tests via [ChefSpec](https://github.com/sethvar
 
 ## Setting up the test environment
 
-To test the camunda-cookbook-template environment see [VAGRANT](VAGRANT.md) for necessary installations
+To test the camunda-template cookbook environment see [VAGRANT](VAGRANT.md) for necessary installations
 
 
 Clone the latest version of the cookbook from the repository.
 
-    git clone git@github.com:camunda-ci/camunda-cookbook-template-cookbook.git
-    cd camunda-cookbook-template-cookbook
+    git clone git@github.com:camunda-ci/camunda-template-cookbook.git
+    cd camunda-template-cookbook
 
 Install the gems used for testing:
 
@@ -36,4 +36,4 @@ To run ChefSpec for a specific recipe:
     
 ## Running Test Kitchen
 
-Test Kitchen test suites are defined in [.kitchen.yml](https://github.com/camunda/camunda-cookbook-template-cookbook/blob/master/.kitchen.yml). Running `kitchen test` will cause Test Kitchen to spin up each platform VM in turn, running the `camunda-cookbook-template::default` recipe. If the Chef run completes successfully, corresponding tests in `test/integration` are executed. These must also pass.
+Test Kitchen test suites are defined in [.kitchen.yml](https://github.com/camunda/camunda-template-cookbook/blob/master/.kitchen.yml). Running `kitchen test` will cause Test Kitchen to spin up each platform VM in turn, running the `camunda-template::default` recipe. If the Chef run completes successfully, corresponding tests in `test/integration` are executed. These must also pass.
